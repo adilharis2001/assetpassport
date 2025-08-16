@@ -105,9 +105,9 @@ export default function CTA() {
           </p>
 
           <div className="animate-slide-up">
-            <Link href="/dashboard">
+            <Link href="/app">
               <Button size="lg" className="text-2xl px-16 py-8 bg-white text-gray-900 hover:bg-gray-100 transform hover:scale-110 transition-all duration-300 shadow-2xl font-bold">
-                Launch Demo
+                Go to App
               </Button>
             </Link>
           </div>

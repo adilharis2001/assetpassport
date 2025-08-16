@@ -32,9 +32,9 @@ export default function Hero() {
 
         {/* CTA button */}
         <div className="animate-slide-up">
-          <Link href="/dashboard">
+          <Link href="/app">
             <Button size="lg" className="text-2xl px-16 py-8 bg-white text-gray-800 hover:bg-gray-100 hover:text-gray-900 transform hover:scale-110 transition-all duration-300 shadow-2xl font-bold">
-              Get Started
+              Go to App
             </Button>
           </Link>
         </div>

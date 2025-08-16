@@ -37,8 +37,8 @@ export default function Header() {
             <Link href="#slide-5" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold text-lg">
               Tech
             </Link>
-            <Link href="/dashboard" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold text-lg">
-              Dashboard
+            <Link href="/app" className="text-gray-700 hover:text-gray-900 transition-colors font-semibold text-lg">
+              Go to App
             </Link>
           </nav>
 
@@ -89,11 +89,11 @@ export default function Header() {
                 Tech
               </Link>
               <Link
-                href="/dashboard"
+                href="/app"
                 className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Dashboard
+                Go to App
               </Link>
               <div className="px-3 py-2">
                 <Button

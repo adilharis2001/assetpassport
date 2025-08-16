@@ -31,8 +31,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="text-gray-300 hover:text-white transition-colors text-lg">
-                  Dashboard
+                <Link href="/app" className="text-gray-300 hover:text-white transition-colors text-lg">
+                  Go to App
                 </Link>
               </li>
               <li>
@@ -55,8 +55,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#slide-6" className="text-gray-300 hover:text-white transition-colors text-lg">
-                  Demo
+                <Link href="/app" className="text-gray-300 hover:text-white transition-colors text-lg">
+                  Go to App
                 </Link>
               </li>
               <li>
