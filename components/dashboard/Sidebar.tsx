@@ -5,25 +5,21 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { 
   Home, 
+  Plus, 
+  Folder, 
   BarChart3, 
-  Wallet, 
-  Settings, 
-  Users, 
-  FileText, 
-  Shield,
+  Share,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard', icon: Home },
-  { name: 'Assets', href: '/dashboard/assets', icon: Wallet },
-  { name: 'Analytics', href: '/dashboard/analytics', icon: BarChart3 },
-  { name: 'Portfolio', href: '/dashboard/portfolio', icon: FileText },
-  { name: 'Security', href: '/dashboard/security', icon: Shield },
-  { name: 'Team', href: '/dashboard/team', icon: Users },
-  { name: 'Settings', href: '/dashboard/settings', icon: Settings },
+  { name: 'Home', href: '/dashboard', icon: Home },
+  { name: 'Register New Asset', href: '/dashboard/register', icon: Plus },
+  { name: 'Asset Management', href: '/dashboard/assets', icon: Folder },
+  { name: 'Reporting', href: '/dashboard/reporting', icon: BarChart3 },
+  { name: 'Generate Public Verification URL', href: '/dashboard/verification', icon: Share },
 ]
 
 export default function Sidebar() {

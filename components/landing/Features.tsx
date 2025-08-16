@@ -1,70 +1,92 @@
-import { Shield, Lock, Zap, Users, BarChart3, Globe } from 'lucide-react'
-
-const features = [
-  {
-    icon: Shield,
-    title: 'Secure by Design',
-    description: 'Built with enterprise-grade security protocols and blockchain technology for maximum protection.'
-  },
-  {
-    icon: Lock,
-    title: 'Decentralized Control',
-    description: 'Your assets, your control. No central authority can freeze or seize your digital property.'
-  },
-  {
-    icon: Zap,
-    title: 'Lightning Fast',
-    description: 'Built on modern blockchain infrastructure for instant transactions and real-time updates.'
-  },
-  {
-    icon: Users,
-    title: 'Community Driven',
-    description: 'Governed by the community with transparent decision-making processes.'
-  },
-  {
-    icon: BarChart3,
-    title: 'Advanced Analytics',
-    description: 'Comprehensive insights into your asset performance and portfolio health.'
-  },
-  {
-    icon: Globe,
-    title: 'Global Access',
-    description: 'Access your assets from anywhere in the world, 24/7.'
-  }
-]
-
 export default function Features() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose AssetPassport?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We've built the most secure and user-friendly platform for managing your digital assets. 
-            Here's what makes us different.
-          </p>
+    <>
+      {/* The Problem Slide */}
+      <section id="slide-2" className="slide bg-gradient-secondary">
+        <div className="absolute inset-0">
+          <div className="absolute top-32 right-20 w-72 h-72 bg-white/10 rounded-full blur-3xl float-delay-1"></div>
+          <div className="absolute bottom-32 left-20 w-80 h-80 bg-white/15 rounded-full blur-3xl float-delay-3"></div>
+          <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-red-500/20 rounded-full blur-3xl float"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-56 h-56 bg-orange-500/20 rounded-full blur-3xl float-delay-2"></div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="group">
-              <div className="bg-gradient-to-br from-cream to-peach p-8 rounded-2xl h-full transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1">
-                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <feature.icon className="w-6 h-6 text-primary-300" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {feature.description}
-                </p>
+
+        <div className="slide-content animate-fade-in">
+          <div className="text-8xl md:text-9xl mb-12 animate-scale-in drop-shadow-2xl">📉</div>
+          <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-12 text-shadow-lg animate-slide-up">
+            The Problem
+          </h2>
+          
+          <div className="max-w-5xl mx-auto">
+            <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 mb-12 leading-relaxed text-shadow animate-slide-up">
+              Most SMBs track assets in spreadsheets, QuickBooks, or Xero.<br />
+              These systems weren't built for proof or portability.
+            </p>
+            
+            <div className="flex justify-center items-center gap-12 mb-16 animate-slide-up">
+              <div>
+                <img src="/logos/quickbooks.png" alt="QuickBooks" className="h-20 w-auto object-contain opacity-90" />
+              </div>
+              <div>
+                <img src="/logos/xero.png" alt="Xero" className="h-20 w-auto object-contain opacity-90" />
               </div>
             </div>
-          ))}
+            
+            <div className="space-y-8 text-xl md:text-2xl lg:text-3xl text-white/80 animate-slide-up">
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">❌</span>
+                <span>No way to verify ownership</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">🔍</span>
+                <span>No audit trail</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">🔒</span>
+                <span>No portable proof across platforms</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* The Solution Slide */}
+      <section id="slide-3" className="slide bg-gradient-tertiary">
+        <div className="absolute inset-0">
+          <div className="absolute top-40 left-16 w-64 h-64 bg-white/10 rounded-full blur-3xl float"></div>
+          <div className="absolute bottom-40 right-16 w-96 h-96 bg-white/15 rounded-full blur-3xl float-delay-2"></div>
+          <div className="absolute top-1/3 right-1/3 w-52 h-52 bg-green-400/20 rounded-full blur-3xl float-delay-1"></div>
+          <div className="absolute bottom-1/3 left-1/3 w-44 h-44 bg-blue-400/20 rounded-full blur-3xl float-delay-3"></div>
+        </div>
+
+        <div className="slide-content animate-fade-in">
+          <div className="text-8xl md:text-9xl mb-12 animate-scale-in drop-shadow-2xl">💡</div>
+          <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-12 text-shadow-lg animate-slide-up">
+            The Solution
+          </h2>
+          
+          <div className="max-w-5xl mx-auto">
+            <p className="text-2xl md:text-3xl lg:text-4xl text-white/95 mb-16 leading-relaxed text-shadow animate-slide-up">
+              <strong className="text-yellow-200">Asset Passports</strong> on-chain.<br />
+              Issue a tamper-proof record for each asset with just a few clicks.
+            </p>
+            
+            <div className="space-y-8 text-xl md:text-2xl lg:text-3xl text-white/80 animate-slide-up">
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">🔗</span>
+                <span>Works with your existing system</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">🚀</span>
+                <span>No crypto knowledge needed</span>
+              </div>
+              <div className="flex items-center justify-center">
+                <span className="mr-6 text-4xl">✅</span>
+                <span>Portable, verifiable, and queryable</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

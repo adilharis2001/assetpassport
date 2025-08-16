@@ -3,39 +3,41 @@ import { Github, Twitter, Linkedin, Mail } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-white/80 backdrop-blur-md border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-200 to-primary-300 rounded-lg"></div>
-              <span className="text-xl font-bold text-gray-900">AssetPassport</span>
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-300 to-rose-400 rounded-xl flex items-center justify-center shadow-lg">
+                <span className="text-white text-lg font-black">AP</span>
+              </div>
+              <span className="text-2xl font-black text-white">Asset Passport</span>
             </div>
-            <p className="text-gray-600 max-w-md">
-              Secure and decentralized asset management platform built for the future of Web3.
+            <p className="text-gray-300 max-w-md text-lg leading-relaxed">
+              Bringing Web3 into Fixed Asset Accounting. The world's first decentralized asset registry that makes blockchain-powered tracking feel like magic.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
+            <h3 className="text-lg font-bold text-white tracking-wider uppercase mb-6">
               Product
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li>
-                <Link href="/features" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="#slide-2" className="text-gray-300 hover:text-white transition-colors text-lg">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/dashboard" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="/dashboard" className="text-gray-300 hover:text-white transition-colors text-lg">
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Pricing
+                <Link href="#slide-5" className="text-gray-300 hover:text-white transition-colors text-lg">
+                  Tech Stack
                 </Link>
               </li>
             </ul>
@@ -43,22 +45,22 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
+            <h3 className="text-lg font-bold text-white tracking-wider uppercase mb-6">
               Company
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="#slide-4" className="text-gray-300 hover:text-white transition-colors text-lg">
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-600 hover:text-gray-900 transition-colors">
-                  Blog
+                <Link href="#slide-6" className="text-gray-300 hover:text-white transition-colors text-lg">
+                  Demo
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <Link href="#contact" className="text-gray-300 hover:text-white transition-colors text-lg">
                   Contact
                 </Link>
               </li>
@@ -67,25 +69,25 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-gray-600">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm">
-              © 2024 AssetPassport. All rights reserved.
+            <p className="text-gray-300 text-lg">
+              © 2024 Asset Passport. Built for hackathon glory. All rights reserved.
             </p>
             
             {/* Social Links */}
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
-                <Github className="w-5 h-5" />
+            <div className="flex space-x-8 mt-6 md:mt-0">
+              <Link href="#" className="text-gray-400 hover:text-orange-300 transition-colors">
+                <Github className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
-                <Twitter className="w-5 h-5" />
+              <Link href="#" className="text-gray-400 hover:text-rose-300 transition-colors">
+                <Twitter className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <Link href="#" className="text-gray-400 hover:text-orange-300 transition-colors">
+                <Linkedin className="w-6 h-6" />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
-                <Mail className="w-5 h-5" />
+              <Link href="#" className="text-gray-400 hover:text-rose-300 transition-colors">
+                <Mail className="w-6 h-6" />
               </Link>
             </div>
           </div>

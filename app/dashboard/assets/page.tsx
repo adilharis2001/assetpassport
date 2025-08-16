@@ -1,10 +1,10 @@
 import DashboardLayout from '@/components/dashboard/DashboardLayout'
-import Assets from '@/components/dashboard/views/Assets'
+import AssetManagement from '@/components/dashboard/views/Assets'
 
-export default function AssetsPage() {
+export default function AssetManagementPage() {
   return (
     <DashboardLayout>
-      <Assets />
+      <AssetManagement />
     </DashboardLayout>
   )
 }

@@ -3,49 +3,40 @@ import Button from '@/components/ui/Button'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-cream via-peach to-rose py-20 lg:py-32">
-      <div className="absolute inset-0 bg-black/5"></div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Secure Your Digital Assets with{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-primary-400">
-              Web3 Technology
-            </span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
-            AssetPassport provides a decentralized, secure, and user-friendly platform for managing your digital assets. 
-            Built on blockchain technology for ultimate transparency and control.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/dashboard">
-              <Button size="lg" className="text-lg px-8 py-4">
-                Get Started
-              </Button>
-            </Link>
-            <Link href="/features">
-              <Button variant="secondary" size="lg" className="text-lg px-8 py-4">
-                Learn More
-              </Button>
-            </Link>
-          </div>
-          
-          <div className="mt-12 flex justify-center items-center space-x-8 text-sm text-gray-600">
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-primary-200 rounded-full"></div>
-              <span>Secure by Design</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-primary-200 rounded-full"></div>
-              <span>Decentralized</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-2 h-2 bg-primary-200 rounded-full"></div>
-              <span>User Owned</span>
-            </div>
-          </div>
+    <section id="slide-1" className="slide bg-gradient-primary">
+      {/* Dynamic background elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl float"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-white/20 rounded-full blur-3xl float-delay-2"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl float-delay-1"></div>
+      </div>
+
+      <div className="slide-content animate-fade-in">
+        {/* Emoji */}
+        <div className="text-8xl md:text-9xl mb-12 animate-scale-in">🎯</div>
+        
+        {/* Tagline */}
+        <div className="text-xl md:text-2xl lg:text-3xl text-white/80 mb-8 font-medium text-shadow animate-slide-up">
+          Bringing Web3 into Fixed Asset Accounting
+        </div>
+
+        {/* Main headline */}
+        <h1 className="text-6xl md:text-8xl lg:text-9xl font-black leading-tight mb-8 text-white text-shadow-lg animate-slide-up">
+          Real-World Asset Passports
+        </h1>
+
+        {/* Subtitle */}
+        <p className="text-2xl md:text-3xl lg:text-4xl text-white/90 mb-16 max-w-5xl mx-auto leading-relaxed text-shadow animate-slide-up">
+          No tokens. No wallets. Just verified proof that your asset exists.
+        </p>
+
+        {/* CTA button */}
+        <div className="animate-slide-up">
+          <Link href="/dashboard">
+            <Button size="lg" className="text-2xl px-16 py-8 bg-white text-gray-800 hover:bg-gray-100 hover:text-gray-900 transform hover:scale-110 transition-all duration-300 shadow-2xl font-bold">
+              Get Started
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
